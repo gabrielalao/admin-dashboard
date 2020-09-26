@@ -1,4 +1,4 @@
-# APP NAME
+# TEST FRONT-END
 
 [![Run Status](https://api.shippable.com/projects/591c82a22f895107009e8b35/badge?branch=devel)](https://app.shippable.com/github/ansible/awx)
 test frontend used [core-ui] template.
