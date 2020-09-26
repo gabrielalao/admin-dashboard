@@ -2,8 +2,8 @@
   "name": "testwraps",
   "version": "1.0.0",
   "description": "Open Source Bootstrap Admin Template",
-  "author": "Victor",
-  "copyright": "Copyright 2019 alexander",
+  "author": "Gabriel Alao",
+  "copyright": "Copyright 2020 Gabriel",
   "license": "MIT",
   "scripts": {
     "start": "vue-cli-service serve",
