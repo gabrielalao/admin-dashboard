@@ -7,7 +7,7 @@ Vue.js, Node and MySQl Admin Dashboard plugin that will sit directly on a web ho
  
  ## Default User: 
  
-update  user data in your db
+update  user or add more user with phpMyAdmin on MySQL
  
  
 -- Dumping data for table `users`
