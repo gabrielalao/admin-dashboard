@@ -1,8 +1,8 @@
 {
-  "name": "testwraps",
+  "name": "Appname",
   "version": "1.0.0",
-  "description": "Open Source Bootstrap Admin Template",
-  "author": "Gabriel",
+  "description": "Vue.js, Node.js and MySQL  Web App",
+  "author": "Gabriel Alao",
   "copyright": "Copyright 2020 Gabriel",
   "license": "MIT",
   "scripts": {
