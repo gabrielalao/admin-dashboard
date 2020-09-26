@@ -7,16 +7,16 @@
           class="navbar-brand-full"
           width="100%"
           height="100%"
-          alt="Test Logo"
+          alt="App Logo"
         />
-        <img class="navbar-brand-minimized" width="100%" alt="Test Logo" />
+        <img class="navbar-brand-minimized" width="100%" alt="App Logo" />
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg" v-show="false" />
       <b-navbar-nav class="d-md-down-none">
         <span class="navbar-toggler-icon" @click="toggleBodyClass()" style="cursor: pointer;"></span>
       </b-navbar-nav>
       <b-navbar-nav class="d-md-down-none">
-        <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
+        <b-nav-item class="px-3" to="/dashboard">App Name</b-nav-item>
         <b-nav-item v-if="user_permission==1" class="px-3" to="/users" exact>Users</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
@@ -48,11 +48,11 @@
       <!--footer-->
       <div>
         <a href></a>
-        <span class="ml-1">&copy; 2019 Test.</span>
+        <span class="ml-1">&copy; 2020 Appname.</span>
       </div>
       <div class="ml-auto">
         <span class="mr-1">Powered by</span>
-        <a href="">Test TEAM</a>
+        <a href="">Appname</a>
       </div>
     </TheFooter>
   </div>

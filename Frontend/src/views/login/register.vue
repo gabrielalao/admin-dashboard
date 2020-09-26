@@ -55,7 +55,7 @@
                       <b-button type="submit" variant="primary" class="px-4">Signup</b-button>
                     </b-col>
                     <b-col cols="6">
-                      <b-button v-on:click="back()" variant="primary" class="active mt-3">From Login</b-button>
+                      <b-button v-on:click="back()" variant="primary" class="px-4">To Login</b-button>
                     </b-col>
                   </b-row>
                   <div style="margin-top:10px;">

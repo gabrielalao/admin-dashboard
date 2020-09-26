@@ -1,7 +1,7 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
+      name: 'Appname',
       url: '/dashboard',
       icon: 'icon-home',
     },

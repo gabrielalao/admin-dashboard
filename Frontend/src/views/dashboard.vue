@@ -1,13 +1,13 @@
 <template>
   <div class="animated fadeIn">
-    Dashboard
+    App Name Dashboard
   </div>
 </template>
 
 <script>
 
 export default {
-  name: "Dashboard",
+  name: "Dash",
   data: function() {
     return {
     };
