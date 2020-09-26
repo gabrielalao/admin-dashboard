@@ -5,12 +5,11 @@
       <b-link class="navbar-brand" style="width: 200px;" to="#">
         <img
           class="navbar-brand-full"
-          src="img/logo.png"
           width="100%"
           height="100%"
-          alt="CoreUI Logo"
+          alt="Test Logo"
         />
-        <img class="navbar-brand-minimized" src="img/brand/mark.png" width="100%" alt="CoreUI Logo" />
+        <img class="navbar-brand-minimized" width="100%" alt="Test Logo" />
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg" v-show="false" />
       <b-navbar-nav class="d-md-down-none">

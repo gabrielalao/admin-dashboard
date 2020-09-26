@@ -54,6 +54,9 @@
                     <b-col cols="6">
                       <b-button type="submit" variant="primary" class="px-4">Signup</b-button>
                     </b-col>
+                    <b-col cols="6">
+                      <b-button v-on:click="back()" variant="primary" class="active mt-3">From Login</b-button>
+                    </b-col>
                   </b-row>
                   <div style="margin-top:10px;">
                       <b-alert :show="is_error" variant="danger">{{error_msg}}</b-alert>
@@ -76,6 +79,7 @@ export default {
   data () {
     return {
       fullname: null,
+      email: null,
       password: null,
       error_msg: "",
       is_error: false,
@@ -92,19 +96,22 @@ export default {
       }
       // console.log(payload);
       //axios.post('/api/auth/', payload).then(function (resp) {
-      axios.post('/api/users/register', payload).then(function (resp) {
-        if (resp.data.status  == 'success') {
+      axios.post('/users/register', payload).then(function (resp) {
+        if (resp.status  == 200) {
           vm.$store.dispatch('storeToken', resp.data.token)
-          vm.$store.dispatch('storeUser', resp.data.user)
-          vm.$router.push({ name: 'Dashboard' })
+          vm.$store.dispatch('storeUser', resp.data)
+          vm.$router.push({ name: 'Login' })
         }
         else
         {
-          console.log(resp.data.status);
           vm.is_error = true;
-          vm.error_msg = resp.data.status;
+          vm.error_msg = resp.status;
         }
       })
+    },
+    back: function(event) {
+      let vm = this;
+      vm.$router.push({ name: 'Login' });
     }
   }
 };

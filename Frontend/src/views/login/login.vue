@@ -61,6 +61,7 @@
                     variant="primary"
                     class="active mt-3"
                   >Register Now!</b-button>
+                  
                 </div>
               </b-card-body>
             </b-card>
@@ -86,30 +87,30 @@ export default {
   },
   methods: {
     login: function(event) {
-      event.preventDefault()
       let vm = this;
       let payload = {
         email: this.username,
-        password: this.password
+        password: this.password,
       }
-      // console.log(payload);
-      //axios.post('/api/auth/', payload).then(function (resp) {
-      axios.post('/api/users/login', payload).then(function (resp) {
-        if (resp.data.status  == 'success') {
-          vm.$store.dispatch('storeToken', resp.data.token)
-          vm.$store.dispatch('storeUser', resp.data.user)
-          vm.$router.push({ name: 'Dashboard' })
+      axios.post('/users/login', payload).then(function (resp) {
+        if (resp.status  == 200) {
+          vm.$store.dispatch('storeToken', resp.data.token);
+          vm.$store.dispatch('storeUser', resp.data);
+          vm.$router.push({ name: 'Dashboard' });
         }
         else
         {
-          console.log(resp.data.status);
+          // console.log(resp.status);
+          // console.log(resp.data.token);
+          // console.log(resp.data);
           vm.is_error = true;
-          vm.error_msg = resp.data.status;
+          vm.error_msg = resp.status;
         }
       })
     },
     register: function(event) {
-      window.location.href = '#/register';
+      let vm = this;
+      vm.$router.push({ name: 'Register' });
     }
   }
 };

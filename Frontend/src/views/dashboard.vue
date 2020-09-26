@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: "dashboard",
+  name: "Dashboard",
   data: function() {
     return {
     };

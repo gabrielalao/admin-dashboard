@@ -1,7 +1,7 @@
-# TEST BACK-END
+# TEST BACKEND
 
 [![Run Status](https://api.shippable.com/projects/591c82a22f895107009e8b35/badge?branch=devel)](https://app.shippable.com/github/ansible/awx)
-test backend used [core-ui] template.
+test frontend used [core-ui] template.
 
 ## Install Guide
 

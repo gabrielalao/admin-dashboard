@@ -8,11 +8,12 @@ export default {
   name: "app",
   mounted() {
     let vm = this;
-    axios.get("/api/auth/me")
+    axios.post("/users/login")
     .then(function(resp) {
-      if (resp.data.status == "success") {
+      if (resp.status == "success") {
         vm.$store.dispatch("storeToken", resp.data.token);
-        vm.$store.dispatch("storeUser", resp.data.user);
+        vm.$store.dispatch("storeUser", resp.data);
+        vm.$router.push({ name: 'Dashboard' });
       }
     })
     .catch(function(err) {

@@ -28,7 +28,7 @@ const router = new Router({
       component: DefaultContainer,
       children: [
         {
-          path: 'dashboard',
+          path: '/dashboard',
           name: 'Dashboard',
           component: Dashboard
         },

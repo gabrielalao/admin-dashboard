@@ -9,12 +9,15 @@ export default new Vuex.Store({
         token: null,
         // tokenId: null
     },
+    getters: {
+        isToken: state => state.token,
+      },
     mutations: {
         storeToken (state, token) {
             state.token = token
         },
         storeUser (state, user) {
-            state.user = user
+            state.data = user
         },
         // storeTokenId (state, tokenId) {
         //     state.tokenId = tokenId

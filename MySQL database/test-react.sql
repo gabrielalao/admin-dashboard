@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 26, 2020 at 12:28 AM
+-- Generation Time: Sep 26, 2020 at 03:57 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -29,8 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `firstName` varchar(255) NOT NULL,
-  `lastName` varchar(255) NOT NULL,
+  `fullname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `hash` varchar(255) NOT NULL,
   `createdAt` datetime NOT NULL,
@@ -41,8 +40,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstName`, `lastName`, `email`, `hash`, `createdAt`, `updatedAt`) VALUES
-(1, 'Gabriel', 'Alao', 'gabrieldeveloper1@gmail.com', '1234567890', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `users` (`id`, `fullname`, `email`, `hash`, `createdAt`, `updatedAt`) VALUES
+(1, 'GabrielAlao', 'gabrieldeveloper1@gmail.com', '$2a$10$mgumD049hfhQbhbfpGFSYOhrnWSTKqG1WDyFdq.e1JWAvLMZtn7ES', '2020-09-25 23:03:09', '2020-09-25 23:03:09'),
+(2, 'Gabriel Alao', 'GabrielAlao@developer.com', '$2a$10$tNRx7KWKjfphgedienVHfOcH9vN7df0LeALdUukmIQoSNtOPlrzbG', '2020-09-25 23:12:33', '2020-09-25 23:12:33');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +62,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

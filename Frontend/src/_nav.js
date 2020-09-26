@@ -8,10 +8,5 @@ export default {
     {
       divider: true
     },
-    {
-      name: 'Upload New Design',
-      url: '/upload',
-      icon: 'fa fa-upload',
-    },
   ]
 }
