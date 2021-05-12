@@ -22,7 +22,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.11",
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.2",
     "css-vars-ponyfill": "^1.16.2",
     "flag-icon-css": "^3.2.0",
