@@ -32,7 +32,7 @@
     "moment": "^2.24.0",
     "perfect-scrollbar": "^1.4.0",
     "simple-line-icons": "^2.4.1",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "vee-validate": "^2.2.3",
     "vue": "^2.5.22",
     "vue-chartjs": "^3.4.0",
