@@ -28,7 +28,7 @@
     "flag-icon-css": "^3.2.0",
     "font-awesome": "^4.7.0",
     "js-yaml": "^3.13.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "moment": "^2.24.0",
     "perfect-scrollbar": "^1.4.0",
     "simple-line-icons": "^2.4.1",
